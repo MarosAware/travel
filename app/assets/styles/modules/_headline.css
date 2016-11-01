@@ -1,0 +1,53 @@
+.headline {
+	font-weight: 300;
+	font-size:1.9rem;
+	color:$mainBlue;
+
+	@mixin atSmall {
+		font-size:2.875rem;
+	}
+	
+
+	&--centered {
+		text-align:center;
+		
+	}
+
+	&--orange {
+		color:$mainOrange;
+	}
+	
+	&--small {
+		font-size:1.2rem;
+
+		@mixin atSmall {
+			font-size:1.875rem;
+		}
+	}
+
+	&--narrow {
+		max-width:500px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	&--light {
+		font-weight:100;
+	}
+
+	&--b-margin-small {
+		margin-bottom: .5em;
+	} 
+	 /* definiowanie marginesu na elemencie tekstowym za pomoca 'em' jest relatywne do wielkosci czcionki elementu samej w sobie
+	 i mozna uzyc tej classy rowniez do inych headlines ktore maja rozne rozmary czcionki i skaluje je elegancko w odniesieniu do wlasnie tej wielkosci czcionki. */
+
+	&--b-margin-large {
+		margin-bottom:1.6em;
+	} 
+
+	&--no-t-margin {
+		margin-top:0;
+	}
+
+}
+
