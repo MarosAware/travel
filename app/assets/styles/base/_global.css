@@ -15,3 +15,7 @@ img {
 a {
 	color:$mainOrange;
 }
+
+body, html {
+	height: 100%;
+}
