@@ -9,11 +9,11 @@ class MobileMenu {
 	}
 
 	events() {
-		this.menuIcon.click(this.toggleTheMenu.bind(this));
+		this.menuIcon.click(this.toggleTheMenu.bind(this)); /*bind aby zmienic wskaznik ktory wskazuje na wlasnosc obiektu this */
 	}
 
 	toggleTheMenu() {
-		this.menuContent.toggleClass("site-header__menu-content--is-visible");
+		this.menuContent.toggleClass("site-header__menu-content--is-visible"); /*toggleClass is jquery method.*/
 		this.siteHeader.toggleClass("site-header--is-expanded");
 		this.menuIcon.toggleClass("site-header__menu-icon--close-x");
 	}
