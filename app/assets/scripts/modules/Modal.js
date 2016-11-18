@@ -27,8 +27,8 @@ class Modal {
 
 	openModal() {
 		this.modal.addClass("modal--is-visible");
-		return false; //aby klikniecie przycisku nie powodowalo powrotu do strony głównej.//
-	}
+		return false; 
+	}/*aby klikniecie przycisku nie powodowalo powrotu do strony głównej.*/
 
 	closeModal() {
 		this.modal.removeClass("modal--is-visible");
