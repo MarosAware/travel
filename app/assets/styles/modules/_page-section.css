@@ -32,7 +32,7 @@
 
 		@mixin atLarge {
 			&.lazyloaded {
-				background:url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+				background:url('../../assets/images/testimonials-bg.jpg') top center no-repeat; /* powinien byc '/' przed assets,  nie ma ze wzgledu github live */
 				background-size: cover;
 			}
 		}
